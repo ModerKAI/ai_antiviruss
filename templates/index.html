@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>🔍 AI-Dateianalyse</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>🛡️ AI-Dateiscanner</h1>
+        <form method="POST" enctype="multipart/form-data">
+            <label for="datei">Datei auswählen:</label>
+            <input type="file" name="datei" id="datei" required>
+            <button type="submit">Scannen</button>
+        </form>
+
+        {% if ergebnis %}
+            <div class="result {% if ist_gefaehrlich %}alert{% endif %}">
+                <h2>Ergebnis:</h2>
+                <p>{{ ergebnis }}</p>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>

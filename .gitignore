@@ -1,0 +1,45 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Caches
+*.log
+
+# Distribution / packaging
+.Python
+env/
+venv/
+ENV/
+env.bak/
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Flask / uploads
+uploads/
+instance/
+.webassets-cache
+
+# PyCharm
+.idea/
+*.iml
+
+# VSCode
+.vscode/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Mac OS
+.DS_Store
+
+# Model files
+*.pkl
+*.h5
+
+# Virtual environments
+.venv/
+
+
