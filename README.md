@@ -1,4 +1,4 @@
-# Einfaches Antivirus Projekt mit Flask
+# WFY_Projekt 2025 : Einfaches Antivirus Projekt mit Flask
 
 Dies Projekt ist ein kleines Antivirus-Programm was benutzen Python Flask und ein Machine Learning Modell. Es kann Dateien hochladen und überprüfen, ob da möglich ein Virus drinne ist.
 

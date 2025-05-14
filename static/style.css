@@ -1,4 +1,4 @@
-/* Обнуление и фон */
+/* Nullung und Hintergrund*/
 body {
     margin: 0;
     padding: 0;
@@ -10,7 +10,7 @@ body {
     height: 100vh;
 }
 
-/* Основной контейнер */
+/* Hauptcontainer */
 .container {
     background-color: white;
     padding: 40px 30px;
@@ -21,14 +21,14 @@ body {
     text-align: center;
 }
 
-/* Заголовок */
+/* Überschrift */
 .container h1 {
     font-size: 24px;
     color: #1e3a8a;
     margin-bottom: 20px;
 }
 
-/* Поле выбора файла */
+/* Dateiauswahlfeld */
 input[type="file"] {
     width: 100%;
     padding: 10px;
@@ -40,7 +40,7 @@ input[type="file"] {
     cursor: pointer;
 }
 
-/* Кнопка */
+/* Taste */
 button {
     padding: 12px 24px;
     background-color: #2563eb;
@@ -56,7 +56,7 @@ button:hover {
     background-color: #1d4ed8;
 }
 
-/* Результат сканирования */
+/* Ergebnis von Scan */
 .result {
     margin-top: 25px;
     padding: 15px;
@@ -67,7 +67,7 @@ button:hover {
     color: #166534;
 }
 
-/* Для опасных файлов можно позже добавить */
+/* Für gefährliche Dateien können später hinzufügen */
 .result.alert {
     background-color: #fef2f2;
     border: 1px solid #fecaca;

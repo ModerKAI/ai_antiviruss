@@ -1,20 +1,20 @@
 import numpy as np
 from joblib import load
 
-# Загрузка обученной модели
+# Laden des trainierten Modells
 model = load("model.pkl")
 
-# Пример данных файла (признаки)
-# [размер, количество функций, энтропия]
-file_features = [350, 45, 180]  # заменишь на реальные данные
+# Beispiel für Dateidaten (Zeichen)
+# [Größe, Anzahl der Merkmale, Entropie]
+file_features = [350, 45, 180]  # durch echte Daten ersetzen
 
-# Преобразуем в формат, подходящий модели
+# konvertieren es in ein für das Modell geeignetes Format
 features = np.array(file_features).reshape(1, -1)
 
-# Предсказание
+# Vorhersage
 prediction = model.predict(features)
 
-# Вывод результата
+# Ausgabe des Ergebnisses
 if prediction[0] == 1:
     print("⚠️ Вредоносный файл")
 else:
